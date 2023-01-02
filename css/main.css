@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    border: none;
 }
 body {
     background: #ff0000;
