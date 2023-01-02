@@ -74,6 +74,29 @@
     .sub-section>h2 {
         font-style: italic;
     }
+
+    footer{
+        width: 100%;
+        background-color: aqua;
+        
+    }
+    footer>p{
+        display: inline-block;
+    }
+
+    #social-media-links{
+        /* display: inline-block; */
+        /* display: flex; */
+        /* flex-direction: row; */
+        margin-left: 70px;
+        margin-top: 10px;
+        float: right;
+        width: 25px;
+        height:25px;
+    }
+    #social-media-links>img{
+        margin-right: 20px;
+    }
 }
 
 
