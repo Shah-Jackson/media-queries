@@ -1,7 +1,9 @@
 *{
     box-sizing: border-box;
     border: none;
+    
 }
 body {
     background: #ff0000;
+    font-family: sans-serif;
 }
