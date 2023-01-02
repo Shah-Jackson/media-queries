@@ -3,6 +3,7 @@
     border: none;
     
 }
-body { 
+body {
+    font-family: sans-serif;
     background: #ff0000;   
 }
