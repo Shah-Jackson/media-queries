@@ -1,28 +1,31 @@
 *{
     box-sizing: border-box;
     border: none;
-    
-}
-body {
-    display: flex;
-    font-family: sans-serif;
-    flex-direction: column;
-    align-items: center;
-    margin: 15px;
 }
 
+
+/*-------mobile framework-------*/
+
 @media screen and (min-width: 200px ) and (max-width: 960px){
+    body {
+        display: flex;
+        font-family: sans-serif;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+    }
+
     .alert-info{
         display: flex;
         border: 2px solid rgb(209, 209, 209);
         background-color: rgb(214, 254, 254);
         height: 75px;
         width: 100%;
-        align-self: fill;
         justify-content: center;
         align-items: center;
         font-size: large;
     }
+
     .alert-info>a{
         text-decoration: none;
     }
@@ -34,17 +37,19 @@ body {
         width: 100%;
         text-align: center;
     }
+
     nav{
         width: 100%;
     }
+
     .nav-links{
         display: flex;
         flex-direction: column;
         list-style-type: none;
         padding: 0;
-        width: 100%;
-        /* background: red; */
+        margin-top: 100px;
     }
+
     li{
         display: flex;
         height: 75px;
@@ -56,9 +61,91 @@ body {
         font-size: 25px;
 
     }
+
     img{
         max-width: 100%;
         height:auto;
     }
-    
+
+    .main>h2 {
+        font-size: 35px;
+    }
+
+    .sub-section>h2 {
+        font-style: italic;
+    }
+}
+
+
+/*------desktop framework-------*/
+
+
+
+@media screen and (min-width: 960px ){
+    body {
+        font-family: sans-serif;
+        margin: 15px;
+    }
+
+    .hidden-on-desktop{
+        display: none;
+    }
+
+    h1{
+        font-size: 75px;
+        display: inline-block;
+    }
+
+    nav{
+        display: inline-block;
+        float: right;
+        margin-top: 85px;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: start;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        float: left;
+    }
+
+    li{
+        display: flex;
+        font-size: 25px;
+        margin: 0 25px;
+    }
+
+    img{
+        width: 100%;
+        height:auto;
+    }
+
+    .main{
+        display: inline-block;
+        max-width: 65%;
+    }
+
+    .main>h2{
+        font-size: 35px;
+    }
+
+    .main>p{
+        font-size: 20px;
+    }
+
+    .sub-section{
+        display: inline-block;
+        margin-top: 20px;
+        font-style: italic;
+        max-width: 30%;
+        float: right;
+    }
+
+    .sub-section>p{
+        font-size: 20px;
+    }
 }
